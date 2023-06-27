@@ -10,9 +10,15 @@ img {
     width: 100%;
 }
 
-.body {
-    font-size: 100%;
+body {
+    font-size: 1em;
 }
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
 .flexContainer{
     display: flex;
     flex-wrap: wrap;
@@ -38,24 +44,36 @@ img {
 }
 
 @media screen and (min-width: 768px){
+
+    .container {
+        width: 90%;
+    }
+
     .flexContainer > * {
         width: calc(100% - 20px);
         flex-direction: column;
-        /* font-size: 2rem; */
-        /* margin: 0%; */
+
     }
 }
 
 @media screen and (min-width: 992px){
+
+    .container {
+        width: 80%;
+    }
+
     .flexContainer > * {
         width: calc(50% - 20px);
-        /* margin: 10%; */
     }
 }
 
 @media screen and (min-width: 1200px){
+
+    .container {
+        width: 70%;
+    }
+
     .flexContainer > * {
         width: calc(33% - 20px);
-        /* margin: 20%; */
     }
 }
